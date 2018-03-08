@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <body background="CodingforKidsresized.png">
+       
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4db8ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 40px;
+    background-color: #4db8ff;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {font-family: Comic Sans MS;}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    width: 250px;
+    height: 90px;
+    border: 0px solid #fff;
+    background-color: #4db8ff;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 250px;
+    height: 90px;
+}
+.font {
+	font-family: Comic Sans MS;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    width: 250px;
+    height: 90px;
+    background-color: #0066ff;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #0000ff;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.transparent{
+  background:rgba(255,255,255,0.5);
+}
+    .hide{display:none;}
+    .show{display:block;}
+    
+.background{
+    background-color: #ffffff;
+    }    
+</style>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+        $(function() {
+            $("#visible").click(function() {
+                $('#invisible').toggleClass("show");
+            });
+        });
+</script>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="tab">
+  <button class="tablinks font" onclick="openCity(event, 'London')"><font color="white">Lessons</font></button>
+  </div>
+<div class="tab">
+  <button class="tablinks font" onclick="openCity(event, 'Paris')"><font color="white">Quizzes</font></button>
+</div>
+<div class="tab">
+  <button class="tablinks font" onclick="openCity(event, 'Tokyo')" id="defaultOpen"><font color="white">Info</font></button>
+</div>
+</div>
+<center><h1><font color="white">Coding for Noobs!</font></h1></center>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div id="main">
+<div id="London" class="tabcontent backgound">
+  <h3>Lessons</h3>
+  <p></p>
+</div>
+
+<div id="Paris" class="tabcontent background">
+    <h3>Quizzes</h3>
+    <center><a href="HTMLquiz.json">Click here to start the HTML Quiz!</a></center>
+    <center><a href="aniindex.html">Click here to start the JavaScript Quiz!</a></center>
+    <center><a href="qbrainteasers.json">Click here to start the Python teasers!</a></center>
+  <p> </p> 
+</div>
+
+<div id="Tokyo" class="tabcontent background">
+  <h3>Info</h3>
+  <p>Coding for Noobs was created by </p>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
