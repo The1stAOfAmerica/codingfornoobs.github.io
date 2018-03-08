@@ -1,0 +1,47 @@
+{"quizlist":[
+  
+	{
+	"question":"Which codes are used for making columns and rows?",
+	"option1":"<td> and <tr>",
+	"option2":"<tc> and <tr>",
+	"option3":"<col> and <row>"
+	},
+	{
+    "question":"What does <input type="radio"> do?",
+    "option1":"It sets up a button for selecting one of many choices",
+    "option2":"Tells you whats on the radio",
+    "option3":"It centers and formats the text"
+	
+	},
+	{
+	"question":"What would <a href=https://Coding4Kids.com">Visit Coding4Kids.com!</a>",
+	"option1":"It gives you a link but in different words",
+	"option2":"It puts down a link",
+	"option3":"It references to a link"
+	},
+    {
+    "question":"?",
+    "option1":"",
+    "option2":"",
+    "option3":""
+    },
+    {
+    "question":"?",
+    "option1":"",
+    "option2":"",
+    "option3":""
+    },
+    {
+    "question":"?",
+	"option1":"",
+	"option2":"",
+	"option3":""
+    },
+    {   
+    "question": "?",
+    "option1":"",
+    "option2":"",
+    "option3":""
+    }
+]
+}
