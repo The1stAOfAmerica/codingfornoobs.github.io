@@ -1,5 +1,47 @@
-<html>
-<h1> "Hi" </h1>
+{"quizlist":[
+  
+	{
+	"question":"Which codes are used for making columns and rows?",
+	"option1":"td and tr",
+	"option2":"tc and tr",
+	"option3":"col and row"
+	},
+	{
+	"question":"What does input type=radio do?",
+	"option1":"It sets up a button for selecting one of many choices",
+	"option2":"Tells you whats on the radio",
+	"option3":"It centers and formats the text"
+	},
+	{
+	"question":"What would< a href=https://Coding4Kids.com>Visit Coding4Noobs.com!<  /a> do?",
+	"option1":"It gives you a link but in different words",
+	"option2":"It puts down a link",
+	"option3":"It references to a link"
+	},
+    {
+    "question":"What does HTML stand for?",
+    "option1":"Hyper Text Markup Language",
+    "option2":"Home Tool Mini Language",
+    "option3":"Heart Text Maximum Language"
+    },
+    {
+    "question":"What is the correct css starting and ending element?",
+    "option1":"style /style",
+    "option2":"css /c",
+    "option3":"script /script"
+    },
+    {
+    "question":"How do you reference an id inside your style element?",
+	"option1":"By starting with a #",
+	"option2":"By starting with a .",
+	"option3":"By starting with a /"
+    },
+    {   
+    "question": "What is the format of an ordered list?",
+    "option1":"ol li /li /ol",
+    "option2":"ul li /li /ul",
+    "option3":"l li /li /l"
+    }
 
-
-</html> 
+]
+}
